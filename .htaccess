@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine On    # Turn on the rewriting engine
+  RewriteRule    ^admin    admin/index.php    [NC,L]
+  RewriteEngine On    # Turn on the rewriting engine
+  RewriteRule    ^installation/processor    installation/processor.php    [NC,L]
+  RewriteEngine On    # Turn on the rewriting engine
+  RewriteRule    ^installation    installation/index.php    [NC,L]
+  RewriteEngine on
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . index.php [L]
+</IfModule>

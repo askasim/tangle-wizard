@@ -1,0 +1,6 @@
+# Editor / OS
+.idea/
+.DS_Store
+
+# Runtime logs from the 2015 deployment (contain server paths)
+error_log
